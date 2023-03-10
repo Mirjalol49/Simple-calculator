@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+
+/* GENERAL */
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shantell Sans', "Arial", sans-serif;
+    background-color: rgb(214, 187, 251);
+}
+
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/* STICKY-FOOTER */
+
+.site-main {
+    flex-grow: 1;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(126, 166, 241);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px -3px rgb(0 0 0 / 16%), 0 8px 10px 1px rgb(0 0 0 / 11%), 0 3px 14px 2px rgb(0 0 0 / 10%);
+}
+
+.main-title {
+    text-align: center;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+.main-inputone {
+    width: 300px;
+    font-family: 'Shantell Sans', "Arial", sans-serif;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-select {
+    width: 300px;
+    font-family: 'Shantell Sans', "Arial", sans-serif;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    margin: 8px 0 8px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.js-inputsecond {
+    width: 300px;
+    font-family: 'Shantell Sans', "Arial", sans-serif;
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.js-result {
+    background: rgb(19, 159, 19);
+    color: white;
+    text-align: center;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 5px;
+    margin: 8px 0 8px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-btn {
+    display: inline-block;
+    font-family: 'Shantell Sans', "Arial", sans-serif;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms, background 200ms;
+    background: #000;
+    color: #ffffff;
+    box-shadow: 0 0 0 3px #000000 inset;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-btn:hover {
+    transform: translateY(-2px);
+}
+
+.main-refresh {
+    display: none;
+}
+
+.main-refresh:hover {
+    transform: translateY(-2px);
+}
+
+.again {
+    display: none;
+}
+
+.refresh {
+    display: block;
+    font-family: 'Shantell Sans', "Arial", sans-serif;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 14px 24px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    transition: transform 200ms, background 200ms;
+    background: #000;
+    color: #ffffff;
+    box-shadow: 0 0 0 3px #000000 inset;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}

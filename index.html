@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="js-form main-form">
+            <h1 class="main-title">Calculator</h1>
+            <input class="js-inputone main-inputone" type="number" placeholder="Enter a number">
+            <select class="js-select main-select">
+            <option value="+">+</option> 
+            <option value="-">-</option> 
+            <option value="*">*</option> 
+            <option value="/">/</option>
+        </select>
+            <input class="js-inputsecond main-inputsecond" type="number" placeholder="Enter a number">
+            <div class="js-result">Natija:</div>
+            <button class="js-btn main-btn">Calculate</button>
+            <button class="js-refresh main-refresh" type="submit" onclick="refreshPage()">Again</button>
+        </form>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
