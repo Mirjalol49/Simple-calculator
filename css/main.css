@@ -66,6 +66,9 @@ body {
     flex-grow: 1;
 }
 
+
+/*! DESKTOP MAIN STYLE  START */
+
 .main-form {
     display: flex;
     flex-direction: column;
@@ -125,6 +128,9 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+
+/*! CALCULATE BUTTON START  */
+
 .main-btn {
     display: inline-block;
     font-family: 'Shantell Sans', "Arial", sans-serif;
@@ -151,13 +157,11 @@ body {
     display: none;
 }
 
-.main-refresh:hover {
-    transform: translateY(-2px);
-}
 
-.again {
-    display: none;
-}
+/*! CALCULATE BUTTON END  */
+
+
+/*! AGAIN BUTTON START  */
 
 .refresh {
     display: block;
@@ -176,3 +180,112 @@ body {
     box-shadow: 0 0 0 3px #000000 inset;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
+.main-refresh:hover {
+    transform: translateY(-2px);
+}
+
+.again {
+    display: none;
+}
+
+
+/*! AGAIN BUTTON END */
+
+
+/*! DESKTOP MAIN STYLE  END */
+
+
+/*! RESPONSIVE FOR MOBILE START */
+
+@media screen and (max-width: 400px) {
+    .main-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        padding: 10px 20px 10px 20px;
+    }
+    .main-inputone {
+        width: 250px;
+        font-family: 'Shantell Sans', "Arial", sans-serif;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .main-select {
+        width: 250px;
+        font-family: 'Shantell Sans', "Arial", sans-serif;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        outline: none;
+        text-align: center;
+        margin: 8px 0 8px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .js-inputsecond {
+        width: 250px;
+        font-family: 'Shantell Sans', "Arial", sans-serif;
+        font-size: 20px;
+        border: 2px solid black;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .js-result {
+        background: rgb(19, 159, 19);
+        color: white;
+        text-align: center;
+        width: 250px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin: 8px 0 8px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .main-btn {
+        display: inline-block;
+        font-family: 'Shantell Sans', "Arial", sans-serif;
+        outline: 0;
+        border: 0;
+        width: 250px;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 14px 24px 16px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        transition: transform 200ms, background 200ms;
+        background: #000;
+        color: #ffffff;
+        box-shadow: 0 0 0 3px #000000 inset;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .refresh {
+        display: block;
+        font-family: 'Shantell Sans', "Arial", sans-serif;
+        width: 250px;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 14px 24px 16px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        transition: transform 200ms, background 200ms;
+        background: #000;
+        color: #ffffff;
+        box-shadow: 0 0 0 3px #000000 inset;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    .again {
+        display: none;
+    }
+}
+
+
+/*! RESPONSIVE FOR MOBILE END */
