@@ -117,7 +117,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.js-result {
+#js-result {
     background: rgb(19, 159, 19);
     color: white;
     text-align: center;
@@ -171,7 +171,7 @@ body {
     cursor: pointer;
     border-radius: 8px;
     padding: 14px 24px 16px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 1;
     transition: transform 200ms, background 200ms;

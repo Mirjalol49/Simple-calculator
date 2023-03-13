@@ -1,11 +1,11 @@
 //! GET ELEMENTS FROM DOM
-let elForm = document.querySelector(".js-form");
-let elInputOne = document.querySelector(".js-inputone");
-let elSelect = document.querySelector(".js-select");
-let elInputSecond = document.querySelector(".js-inputsecond");
-let elResult = document.querySelector(".js-result");
-let elBtn = document.querySelector(".js-btn");
-let elRefresh = document.querySelector(".js-refresh");
+const elForm = document.querySelector("#js-form");
+const elInputone = document.querySelector("#js-inputone");
+const elSelect = document.querySelector("#js-select");
+const elInputSecond = document.querySelector(".js-inputsecond");
+const elResult = document.querySelector("#js-result");
+const elBtn = document.querySelector("#js-btn");
+const elRefresh = document.querySelector("#js-refresh");
 
 //! PREVENT FORM DEFAULT VERSION
 elForm.addEventListener("submit", function(evt) {
@@ -16,27 +16,32 @@ elForm.addEventListener("submit", function(evt) {
     elRefresh.classList.add("refresh");
 
     //! TURNING INPUT TYPE TO NUMBER AND TRIMMING SPACES
-    let inputOneValue = Number(elInputOne.value.trim());
-    let inputSecondValue = Number(elInputSecond.value.trim());
+    const inputOneValue = Number(elInputone.value.trim());
+    const inputSecondValue = Number(elInputSecond.value.trim());
+    let result;
 
     //! GIVING A CONDITION TO CALCULATE
-    if (elSelect.value === "+") {
-        let result = inputOneValue + inputSecondValue;
-        elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-    } else if (elSelect.value === "-") {
-        let result = inputOneValue - inputSecondValue;
-        elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-    } else if (elSelect.value === "*") {
-        let result = inputOneValue * inputSecondValue;
-        elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-    } else if (elSelect.value === "/") {
-        let result = inputOneValue / inputSecondValue;
-        elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    switch (elSelect.value) {
+        case "+":
+            result = inputOneValue + inputSecondValue;
+            elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            break;
+        case "-":
+            result = inputOneValue - inputSecondValue;
+            elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            break;
+        case "*":
+            result = inputOneValue * inputSecondValue;
+            elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            break;
+        case "/":
+            result = inputOneValue / inputSecondValue;
+            elResult.textContent = result.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            break;
     }
-
 });
 
-//! THIS FUCNTION REFRESHES THE PAGE
+//! THIS FUNCTION REFRESHES THE PAGE
 function refreshPage() {
     window.location.reload();
-};
+}
